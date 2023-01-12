@@ -27,7 +27,7 @@ const Header = () => {
   };
 
   return (
-    <nav className={styles.nav}>
+    <nav id="nav" className={styles.nav}>
       {isOpen && <div className={styles.overlay} onClick={removeClass}></div>}
       <div className={styles.left}>
         {/* <Image

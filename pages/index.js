@@ -3,6 +3,11 @@ import Image from "next/image";
 import Layout from "../components/Layout";
 import styles from "../styles/HomeSection.module.css";
 import HomeSection from "../components/sections/HomeSection";
+import AboutSection from "../components/sections/AboutSection";
+import AboutMeSection from "../components/sections/AboutMeSection";
+import Script from "next/script";
+import ReviewSection from "../components/sections/ReviewSection";
+import CardSection from "../components/sections/CardSection";
 
 export default function Home() {
   return (
@@ -11,8 +16,17 @@ export default function Home() {
         <title>Chakra Kriya</title>
         <meta name="description" content="Chakra Kriya" />
         <link rel="icon" href="/favicon.ico" />
+        <link
+          href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+          rel="stylesheet"
+        />
       </Head>
       <HomeSection />
+      <AboutSection />
+      <ReviewSection />
+      <AboutMeSection />
+      {/* <CardSection /> */}
+      <Script src="/js/main.js"></Script>
     </Layout>
   );
 }
