@@ -38,7 +38,7 @@ const DetailSection = () => {
           className={styles.groupPhoto}
         />
         <Image
-          src={"/images/detail/masterClass.webp"}
+          src={"/images/detail/masterClass.jpg"}
           width={400}
           height={500}
           alt="Master Class Image"
