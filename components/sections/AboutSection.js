@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 
 const AboutSection = () => {
   return (
-    <div className={styles.container}>
+    <div className={styles.container} id="about">
       <Image
         src={"/images/curves/blobGroup.png"}
         width={200}

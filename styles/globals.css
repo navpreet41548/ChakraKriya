@@ -7,7 +7,9 @@
   --main-color1: #f34382;
   --main-color2: #3787ff;
 }
-
+html {
+  scroll-behavior: smooth;
+}
 html,
 body {
   padding: 0;
@@ -82,16 +84,24 @@ a {
 /* Swiper Animation */
 
 .swiper {
-  width: fit-content;
-  height: fit-content;
 }
 
 .swiper-wrapper {
   display: flex;
-  flex-direction: row;
-  width: 100%;
+  /* justify-content: center; */
 }
 
+.swiper-pagination-bullet {
+  background-color: white !important;
+}
+
+/* 
 .swiper-slide {
   width: fit-content !important;
+} */
+
+@media screen and (max-width: 950px) {
+  .swiper-wrapper {
+    justify-content: unset;
+  }
 }

@@ -6,7 +6,7 @@ import styles from "/styles/HomeSection.module.css";
 
 const HomeSection = () => {
   return (
-    <div className={styles.container}>
+    <div className={styles.container} id="home">
       <div className={styles.homeContent}>
         <h1 id="mainHeading" className={styles.mainHeading}>
           <span className={"span"}>W</span>
@@ -33,7 +33,7 @@ const HomeSection = () => {
 
         <div className={styles.buttonContainer}>
           <div className={styles.buttonWrapper}>
-            <Link className={styles.button} href={"/"}>
+            <Link className={styles.button} scroll={false} href={"/#courses"}>
               CHAKRA KRIYA COURSES
             </Link>
           </div>

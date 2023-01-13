@@ -45,7 +45,7 @@
 
 .blobGroup {
   position: absolute;
-  opacity: 0.6;
+  opacity: 0.06;
   bottom: 0;
   right: -2%;
   z-index: 3;
@@ -216,5 +216,26 @@
   }
   .quotes {
     font-size: 2.5rem;
+  }
+}
+
+@media screen and (max-width: 300px) {
+  .cardPara {
+    font-size: 12px;
+  }
+  .card {
+    padding: 10px;
+  }
+  .cardImage {
+    height: 50px;
+    width: 50px;
+  }
+  .heading {
+    right: 55px;
+    font-size: 15px;
+    line-height: 13px;
+  }
+  .diff {
+    font-size: 12px;
   }
 }

@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 
 const AboutMeSection = () => {
   return (
-    <div className={styles.container}>
+    <div className={styles.container} id="aboutMe">
       <Image
         className={styles.curveLine}
         src={"/images/curves/curveLine.png"}

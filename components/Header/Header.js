@@ -43,7 +43,12 @@ const Header = () => {
       <ul className={styles.center} ref={menuRef}>
         {NavLinks.map((item, i) => (
           <li key={i} className={styles.list}>
-            <Link href={"/"} className={styles.link} onClick={removeClass}>
+            <Link
+              scroll={false}
+              href={item.path}
+              className={styles.link}
+              onClick={removeClass}
+            >
               {item.display}
             </Link>
           </li>

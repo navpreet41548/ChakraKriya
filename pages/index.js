@@ -8,6 +8,9 @@ import AboutMeSection from "../components/sections/AboutMeSection";
 import Script from "next/script";
 import ReviewSection from "../components/sections/ReviewSection";
 import CardSection from "../components/sections/CardSection";
+import CourseSection from "../components/sections/CourseSection";
+import DetailSection from "../components/sections/DetailSection";
+import Contact from "../components/sections/Contact";
 
 export default function Home() {
   return (
@@ -25,7 +28,10 @@ export default function Home() {
       <AboutSection />
       <ReviewSection />
       <AboutMeSection />
-      {/* <CardSection /> */}
+      <CardSection />
+      <CourseSection />
+      <DetailSection />
+      <Contact />
       <Script src="/js/main.js"></Script>
     </Layout>
   );

@@ -547,3 +547,19 @@
     transform: rotate(15deg) scaleX(-1) translateX(70%);
   }
 }
+
+@media screen and (max-width: 300px) {
+  .mainHeading {
+    font-size: 2rem;
+  }
+  .subHeading2 {
+    font-size: 9px;
+  }
+  .para {
+    font-size: 11px;
+  }
+  .button {
+    letter-spacing: 1px;
+    font-size: 10px;
+  }
+}

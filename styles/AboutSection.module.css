@@ -18,7 +18,7 @@
   top: 0%;
   left: 0;
   /* transform: scaleY(0.5); */
-  transform: scaleY(0.5) translateY(-120%);
+  transform: scaleY(0.5) translateY(-110%);
   /* transform: scaleX(1.5) translateY(-75%); */
 }
 
@@ -355,5 +355,30 @@
 @media screen and (max-width: 320px) {
   .subHeading {
     font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 300px) {
+  .aboutImageWrapper {
+    border-radius: 5px;
+  }
+  .heading {
+    font-size: 1.5rem;
+  }
+  .subHeading {
+    font-size: 12px;
+  }
+  .para {
+    font-size: 12px;
+  }
+  .card {
+    padding: 5px;
+    margin: 10px 0;
+  }
+  .cardHeading {
+    font-size: 11px;
+  }
+  .cardPara {
+    font-size: 11px;
   }
 }

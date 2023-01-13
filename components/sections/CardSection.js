@@ -4,6 +4,9 @@ import React from "react";
 import styles from "/styles/CardSection.module.css";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination } from "swiper";
+import "swiper/css";
+import "swiper/css/pagination";
+import Card from "../elements/Card";
 
 const cardSection = () => {
   return (
@@ -18,81 +21,6 @@ const cardSection = () => {
         </svg>
       </div>
 
-      {/* <div className={styles.cardContainer}>
-        <div className={styles.card}>
-          <div className={styles.cardImageContainer}>
-            <Image
-              className={styles.cardImage}
-              src="/images/cards/card1.png"
-              width={100}
-              height={100}
-              alt="Card Head Image"
-            />
-          </div>
-          <div className={styles.cardTop}>
-            <div className={styles.headingContainer}>
-              <h1 className={styles.heading}>FOOD FOR SOUL</h1>
-            </div>
-            <p className={styles.para}>
-              Around the world, 815 million people regularly go to bed hungry...
-              which is why we made it our mission to provide meals to those in
-              need.
-            </p>
-          </div>
-          <Link className={styles.button} href="/">
-            JOIN NOW
-          </Link>
-        </div>
-        <div className={styles.card}>
-          <div className={styles.cardImageContainer}>
-            <Image
-              className={styles.cardImage}
-              src="/images/cards/card2.png"
-              width={100}
-              height={100}
-              alt="Card Head Image"
-            />
-          </div>
-          <div className={styles.cardTop}>
-            <div className={styles.headingContainer}>
-              <h1 className={styles.heading}>EDUCATION</h1>
-            </div>
-            <p className={styles.para}>
-              Education is every child&apos;s birth right, but unfortunately
-              millions around the world are deprived from it. By educating one
-              at a time, the world becomes a better place!
-            </p>
-          </div>
-          <Link className={styles.button} href="/">
-            JOIN NOW
-          </Link>
-        </div>
-        <div className={styles.card}>
-          <div className={styles.cardImageContainer}>
-            <Image
-              className={styles.cardImage}
-              src="/images/cards/card1.png"
-              width={100}
-              height={100}
-              alt="Card Head Image"
-            />
-          </div>
-          <div className={styles.cardTop}>
-            <div className={styles.headingContainer}>
-              <h1 className={styles.heading}>ANIMAL WELFARE</h1>
-            </div>
-            <p className={styles.para}>
-              Animals need love too! Which is why it is also important to
-              regularly contribute towards animal welfare and protecting
-              nature&apos;s residents.
-            </p>
-          </div>
-          <Link className={styles.button} href="/">
-            JOIN NOW
-          </Link>
-        </div>
-      </div> */}
-
       <Swiper
         slidesPerView={1}
         spaceBetween={10}
@@ -100,7 +28,7 @@ const cardSection = () => {
           clickable: true,
         }}
         breakpoints={{
-          250: {
+          300: {
             slidesPerView: 1.2,
             spaceBetween: 20,
           },
@@ -108,92 +36,46 @@ const cardSection = () => {
             slidesPerView: 1.5,
             spaceBetween: 20,
           },
-          850: {
+          600: {
+            slidesPerView: 2.2,
+            spaceBetween: 20,
+          },
+          950: {
             slidesPerView: 3,
             spaceBetween: 20,
+          },
+          1400: {
+            slidesPerView: 5,
+            spaceBetween: 30,
           },
         }}
         modules={[Pagination]}
         className={`${"mySwiper"} ${styles.swiperContainer}`}
       >
+        <SwiperSlide className={styles.card0}></SwiperSlide>
+
         <SwiperSlide className={styles.card}>
-          <div className={styles.card}>
-            <div className={styles.cardImageContainer}>
-              <Image
-                className={styles.cardImage}
-                src="/images/cards/card1.png"
-                width={100}
-                height={100}
-                alt="Card Head Image"
-              />
-            </div>
-            <div className={styles.cardTop}>
-              <div className={styles.headingContainer}>
-                <h1 className={styles.heading}>ANIMAL WELFARE</h1>
-              </div>
-              <p className={styles.para}>
-                Animals need love too! Which is why it is also important to
-                regularly contribute towards animal welfare and protecting
-                nature&apos;s residents.
-              </p>
-            </div>
-            <Link className={styles.button} href="/">
-              JOIN NOW
-            </Link>
-          </div>
+          <Card
+            imageName="card1.png"
+            heading="FOOD FOUR SOUL"
+            para="Around the world, 815 million people regularly go to bed hungry... which is why we made it our mission to provide meals to those in need."
+          />
         </SwiperSlide>
         <SwiperSlide className={styles.card}>
-          <div className={styles.card}>
-            <div className={styles.cardImageContainer}>
-              <Image
-                className={styles.cardImage}
-                src="/images/cards/card1.png"
-                width={100}
-                height={100}
-                alt="Card Head Image"
-              />
-            </div>
-            <div className={styles.cardTop}>
-              <div className={styles.headingContainer}>
-                <h1 className={styles.heading}>ANIMAL WELFARE</h1>
-              </div>
-              <p className={styles.para}>
-                Animals need love too! Which is why it is also important to
-                regularly contribute towards animal welfare and protecting
-                nature&apos;s residents.
-              </p>
-            </div>
-            <Link className={styles.button} href="/">
-              JOIN NOW
-            </Link>
-          </div>
+          <Card
+            imageName="card2.png"
+            heading="EDUCATION"
+            para="Education is every child's birth right, but unfortunately millions around the world are deprived from it. By educating one at a time, the world becomes a better place!"
+          />
         </SwiperSlide>
         <SwiperSlide className={styles.card}>
-          <div className={styles.card}>
-            <div className={styles.cardImageContainer}>
-              <Image
-                className={styles.cardImage}
-                src="/images/cards/card1.png"
-                width={100}
-                height={100}
-                alt="Card Head Image"
-              />
-            </div>
-            <div className={styles.cardTop}>
-              <div className={styles.headingContainer}>
-                <h1 className={styles.heading}>ANIMAL WELFARE</h1>
-              </div>
-              <p className={styles.para}>
-                Animals need love too! Which is why it is also important to
-                regularly contribute towards animal welfare and protecting
-                nature&apos;s residents.
-              </p>
-            </div>
-            <Link className={styles.button} href="/">
-              JOIN NOW
-            </Link>
-          </div>
+          <Card
+            imageName="card3.png"
+            heading="ANIMAL WELFARE"
+            para="Animals need love too! Which is why it is also important to regularly contribute towards animal welfare and protecting nature's residents."
+          />
         </SwiperSlide>
+        <SwiperSlide className={styles.card0}></SwiperSlide>
       </Swiper>
 
       <Image

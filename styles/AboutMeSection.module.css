@@ -192,3 +192,11 @@
     font-size: 12px;
   }
 }
+@media screen and (max-width: 300px) {
+  .para {
+    font-size: 10px;
+  }
+  .imageTitle {
+    font-size: 12px;
+  }
+}

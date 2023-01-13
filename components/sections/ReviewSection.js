@@ -25,7 +25,7 @@ const ReviewSection = () => {
   };
 
   return (
-    <div className={styles.container}>
+    <div className={styles.container} id="review">
       <Image
         className={styles.rocket}
         src="/images/curves/rocket.png"
