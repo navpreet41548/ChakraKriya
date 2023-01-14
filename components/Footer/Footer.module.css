@@ -4,7 +4,8 @@
   justify-content: center;
   align-items: center;
   padding: 30px 8%;
-  background-color: #101010;
+  background-color: var(--main-color1);
+  box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.206);
 }
 
 .footerTop {
@@ -91,14 +92,14 @@
   cursor: pointer;
 }
 .icon i {
-  color: var(--main-color2);
+  color: white;
   font-size: 30px;
 }
 
 .footerBottom {
   color: white;
   font-weight: 300;
-  border-top: 1px solid rgb(140, 140, 140);
+  border-top: 1px solid rgb(216, 216, 216);
   width: 100%;
   text-align: center;
   padding-top: 20px;

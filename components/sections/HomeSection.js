@@ -33,12 +33,16 @@ const HomeSection = () => {
 
         <div className={styles.buttonContainer}>
           <div className={styles.buttonWrapper}>
-            <Link className={styles.button} scroll={false} href={"/#courses"}>
+            <Link
+              className={`${styles.button} ${styles.button1}`}
+              scroll={false}
+              href={"/#courses"}
+            >
               CHAKRA KRIYA COURSES
             </Link>
           </div>
           <div className={styles.buttonWrapper}>
-            <Link className={styles.button} href={"/"}>
+            <Link className={`${styles.button} ${styles.button2}`} href={"/"}>
               TRY FOR FREE
             </Link>
           </div>
@@ -147,14 +151,14 @@ const HomeSection = () => {
         width={1000}
         height={1000}
         alt="Home Background Image 1"
-        src={"/images/curves/contourLine1.png"}
+        src={"/images/curves/contourLine2.png"}
         className={`${styles.backgroundImg1} ${styles.backgroundImg}`}
       />
       <Image
-        width={1500}
-        height={3000}
+        width={800}
+        height={500}
         alt="Home Background Image 2"
-        src={"/images/home/homeImg6.jpg"}
+        src={"/images/home/homeBackground.png"}
         className={`${styles.backgroundImg2} ${styles.backgroundImg}`}
       />
     </div>

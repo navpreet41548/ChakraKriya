@@ -2,7 +2,7 @@
   width: 100vw;
   min-height: 70vh;
   position: relative;
-  background: linear-gradient(to top, var(--main-background-color), #232323);
+  background: var(--main-background-color);
   padding: 50px 8%;
   display: flex;
   justify-content: space-between;
@@ -16,25 +16,28 @@
   left: 0;
   transform: scaleY(0.7) translateY(-110%);
 }
+.curve path {
+  filter: drop-shadow(0px -10px 9px #a07eff20);
+}
 
 .background {
   position: absolute;
   width: 100%;
   height: auto;
   object-fit: cover;
-  border: 1px solid white;
+  border: 2px solid rgb(0, 0, 0);
   filter: blur(4px);
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
   opacity: 0.15;
-  z-index: 1;
+  z-index: 0;
 }
 
 .heading {
   font-family: var(--heading-font);
   font-size: 4rem;
-  color: white;
+  color: var(--font-color1);
   font-weight: 400;
   letter-spacing: 2px;
   z-index: 2;
@@ -43,7 +46,7 @@
 
 .para {
   font-size: 18px;
-  color: #c9c9c9;
+  color: var(--font-color2);
   font-weight: 300;
   letter-spacing: 2px;
   z-index: 2;
@@ -60,6 +63,7 @@
   z-index: 2;
   position: relative;
   padding: 20px 15px;
+  box-shadow: 0px 0px 4px 1px rgba(0, 0, 0, 0.157);
 }
 
 .inputGroup {
@@ -68,7 +72,7 @@
 .inputWrapper {
   display: flex;
   width: 100%;
-  box-shadow: 0px 0px 4px 1px rgba(0, 0, 0, 0.174);
+  box-shadow: 0px 0px 4px 1px rgba(0, 0, 0, 0.082);
   border-radius: 5px;
   overflow: hidden;
 }
@@ -82,7 +86,7 @@
 }
 .icon i {
   font-size: 20px;
-  color: var(--main-color2);
+  color: var(--main-color1);
 }
 
 .input {
@@ -98,7 +102,7 @@
 
 .label {
   font-size: 13px;
-  color: var(--main-color2);
+  color: var(--main-color1);
 }
 
 .textarea {
@@ -114,9 +118,9 @@
 }
 
 .button {
-  color: var(--main-color1);
+  background-color: var(--main-color1);
+  color: white;
   border: 1px solid var(--main-color1);
-  background: none;
   padding: 10px;
   width: 150px;
   border-radius: 3px;
@@ -145,7 +149,7 @@
   position: absolute;
   top: 20px;
   right: 100%;
-  background-color: var(--main-color2);
+  background-color: var(--main-color1);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -210,6 +214,7 @@
 @media screen and (max-width: 600px) {
   .form {
     background: none;
+    box-shadow: none;
     width: 100%;
   }
   .inputWrapper {
@@ -217,9 +222,6 @@
   }
   .socialContainer {
     display: none;
-  }
-  .label {
-    color: white;
   }
   .buttonContainer {
     justify-content: center;
@@ -230,6 +232,9 @@
   }
   .input {
     padding: 15px 0;
+  }
+  .background {
+    display: none;
   }
 }
 

@@ -10,7 +10,7 @@
 }
 
 .curveLine {
-  opacity: 0.5;
+  opacity: 0.3;
   width: 100vw;
   height: auto;
   position: absolute;
@@ -82,7 +82,7 @@
 }
 
 .heading {
-  color: white;
+  color: var(--font-color1);
   font-family: var(--heading-font);
   letter-spacing: 3px;
   margin: 10px 0;
@@ -90,7 +90,7 @@
 }
 
 .para {
-  color: #f0f0f0;
+  color: var(--font-color2);
   font-weight: 200;
   font-size: 18px;
   letter-spacing: 2px;
@@ -98,6 +98,7 @@
 
 .diff {
   color: var(--main-color1);
+
   font-weight: 400;
 }
 

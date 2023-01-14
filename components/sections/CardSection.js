@@ -14,7 +14,7 @@ const cardSection = () => {
       <div className={styles.curve}>
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
           <path
-            fill="#232323"
+            fill="#fff"
             fill-opacity="1"
             d="M0,288L120,256C240,224,480,160,720,154.7C960,149,1200,203,1320,229.3L1440,256L1440,320L1320,320C1200,320,960,320,720,320C480,320,240,320,120,320L0,320Z"
           ></path>

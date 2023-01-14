@@ -4,7 +4,7 @@
   position: relative;
   /* background: linear-gradient(to right, black, rgb(42, 42, 42)); */
   /* background-color: var(--main-background-color); */
-  background: linear-gradient(to top, var(--main-background-color), #232323);
+  background: var(--main-background-color);
   display: flex;
   justify-content: space-between;
   padding: 0 8%;
@@ -22,33 +22,38 @@
   /* transform: scaleX(1.5) translateY(-75%); */
 }
 
+.curve path {
+  filter: drop-shadow(0px -10px 9px #a07eff20);
+}
+
 .blobGroup {
   z-index: 1;
   position: absolute;
-  opacity: 0.06;
+  opacity: 0.2;
   bottom: 20px;
   left: 0;
 }
 .blob {
-  opacity: 0.03;
+  opacity: 0.09;
   position: absolute;
   width: 30%;
   /* height: auto; */
 }
 
 .blob1 {
-  top: -9%;
-  left: 0;
+  top: -7%;
+  left: -2%;
+  width: 50%;
 }
 .blob2 {
-  top: -9%;
-  left: -12px;
-  width: 35%;
+  top: -5%;
+  left: -2%;
+  width: 45%;
 }
 .blob3 {
-  top: -11%;
+  top: -7%;
   left: 5px;
-  width: 37%;
+  width: 40%;
 }
 
 .left {
@@ -59,19 +64,19 @@
 .heading {
   font-family: var(--heading-font);
   font-size: 3rem;
-  color: white;
-  margin-top: 20px;
+  color: var(--font-color1);
+  margin-top: 60px;
   letter-spacing: 4px;
 }
 
 .subHeading {
-  color: white;
+  color: var(--font-color1);
   font-weight: 300;
   letter-spacing: 2px;
 }
 
 .para {
-  color: #c0c0c0;
+  color: var(--font-color2);
   font-weight: 300;
   margin-top: 10px;
   margin-bottom: 30px;
@@ -83,15 +88,16 @@
 }
 
 .card {
-  background-color: #323232;
+  background-color: var(--main-color1);
   margin: 20px 0;
   padding: 10px;
-  border-radius: 5px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 4px 1px rgba(0, 0, 0, 0.133);
 }
 
 .cardHeading {
   color: white;
-  border-bottom: 1px solid var(--main-color1);
+  border-bottom: 1px solid white;
   font-weight: 300;
   margin: 5px 0;
   width: fit-content;
@@ -115,7 +121,7 @@
   position: absolute;
   width: 90%;
   height: auto;
-  opacity: 0.3;
+  opacity: 0.5;
 }
 
 .aboutImageWrapper {

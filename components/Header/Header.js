@@ -61,7 +61,12 @@ const Header = () => {
         <button className={styles.button}>LOGIN</button>
       </div>
       <div className={styles.burger} onClick={toggleMenu}>
-        <Hamburger toggled={isOpen} toggle={setIsOpen} rounded color="#fff" />
+        <Hamburger
+          toggled={isOpen}
+          toggle={setIsOpen}
+          rounded
+          color="#383838"
+        />
         {/* <Hamburger rounded color="#fff" /> */}
       </div>
     </nav>
